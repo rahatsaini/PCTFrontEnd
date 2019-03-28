@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { SideNavComponent } from './welcome/side-nav/side-nav.component';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'PCT';
+  opensidenav=false;
+  @ViewChild('sidenav')
+  onToggle(){
+          
+  }
 }

@@ -1,4 +1,9 @@
-export const environment = {
+export default {
+    debug:true,
+    testing:true,
+
+
+    
   name: 'Development',
   api: {
     useMockData: false,
@@ -19,4 +24,5 @@ export const environment = {
       tokenname: "UENUQ1M6NGQ0UWtiYll3YmtVOURtNw=="
     }
   }
+
 };

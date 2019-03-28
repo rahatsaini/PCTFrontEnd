@@ -1,1 +1,430 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+/* Page host */
+
+
+html,body{
+  height: 100%;
+}
+
+.page-host {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+  @media print {
+    .page-host {
+      position: absolute;
+      left: 10px;
+      right: 0;
+      top: 50px;
+      bottom: 0;
+      overflow-y: inherit;
+      overflow-x: inherit;
+    }
+  }
+  
+  .page-host .container {
+    padding-top: 20px;
+  }
+  
+  /* Bootstrap */
+  
+  .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+  }
+  
+  /* Page wrapper */
+  
+  @media(min-width:768px) {
+    #page-wrapper {
+      position: inherit;
+      /* margin: 0 0 0 250px; */
+      margin: 0 0 0 0px !important;
+      padding: 0 20px !important;
+      border-left: 1px solid #e7e7e7 !important;
+    }
+  }
+  
+  /*
+  #wrapper {
+    background-color: #fff !important;
+  }
+  */
+  
+  #page-wrapper {
+    background-color: #f5f5f5 !important;
+  }
+  
+  /* Page heading */
+  
+  .page-heading {
+    margin: 10px 0px;
+    margin-bottom: 5px !important;
+  }
+  
+    .page-heading .caption {
+      margin: 2px 0px;
+    }
+  
+  /* Panels */
+  
+  .panel {
+    border: 0px;
+  }
+  
+  .panel-heading {
+    padding: 5px !important;
+    background-color: #fff !important;
+    border-color: #fff !important;
+  }
+  
+  .panel-body {
+    /* padding: 5px !important; */
+    padding: 0px !important;
+  }
+  
+  .panel-heading .caption {
+    font-size: 16px;
+    padding: 2px 5px;
+  }
+  
+  .panel-sortable-placeholder {
+    border: 2px dashed #DBDBDB;
+    background-color: #f5f5f5;
+  }
+  
+  .panel-fullscreen {
+    display: block;
+    /* z-index: 9999; */
+    z-index: 2000;
+    position: fixed !important;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /* overflow: auto; */;
+  }
+  
+  .panel-sortable-empty {
+    /* box-shadow: none !important; */
+    height: 5px;
+    background-color: #f5f5f5;
+  }
+  
+  .panel-selected {
+    /* border-color:#12B0BD; */
+    box-shadow: 0px 0px 2px 2px #12B0BD !important;
+  }
+  
+  /*
+  .panel-fullscreen > .panel-heading {
+      padding: 0 10px
+  }
+  
+  .panel-fullscreen > .panel-body {
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding: 0 10px
+  }
+  
+  .page-panel-fullscreen {
+      overflow: hidden
+  }
+  */
+  
+  /* Aurelia dialog (hack for IE to prevent expanding to full page width) */
+  
+  ai-dialog {
+    display: table;
+  }
+  
+  /*  Action buttons */
+  
+  button:focus {
+    outline: none !important;
+  }
+  
+  .actions .btn {
+    /* font-size: 13px; */
+    line-height: 1.5;
+    margin: 2px 0px;
+  }
+  
+  .actions .btn-rounded {
+    padding: 3px 9px;
+    border-radius: 25px !important;
+    overflow: hidden;
+  }
+  
+  .actions .btn-icon-only {
+    height: 27px;
+    width: 27px;
+    padding: 3px;
+    font-family: FontAwesome;
+  }
+  
+  .btn:hover {
+    transition: all .3s;
+  }
+  
+  /* Navigation bar */
+  
+  .navbar-brand img {
+    margin-top: -5px !important;
+  }
+  
+  .navbar-default {
+    /*
+      padding-left: 20px;
+      padding-right: 20px;
+      */
+    background-color: #f5f5f5 !important;
+    /* border-color: #e7e7e7; */;
+  }
+  
+  /*
+  .navbar-top-links {
+      margin-right: 0 !important;
+  }
+  
+  .navbar-top-links li {
+      display: inline-block !important;
+  }
+  
+  .navbar-top-links li a {
+      padding: 15px !important;
+      min-height: 50px !important;
+  }
+  */
+  
+  /* Buttons */
+  
+  .btn-default {
+    color: #666 !important;
+    background-color: #fff !important;
+    border-color: #ccc !important;
+  }
+  
+  .btn-primary, .btn-primary:hover {
+    color: #fff !important;
+    background-color: #12B0BD !important;
+    border-color: #12B0BD !important;
+  }
+  
+  .btn-workspace, .btn-workspace:hover {
+    color: #666 !important;
+    background-color: #f5f5f5 !important;
+    border-color: #ccc !important;
+  }
+  
+  /* General */
+  
+  .font-orange {
+    color: #FFBB1E !important;
+  }
+  
+  .font-blue {
+    color: #12B0BD !important;
+  }
+  
+  a {
+    color: #666 !important;
+    text-decoration: none !important;
+  }
+  
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #666 !important;
+    font-family: "Open Sans", sans-serif !important;
+    font-weight: 300 !important;
+    letter-spacing: 0px !important;
+  }
+  
+  body {
+    background-color: #f5f5f5 !important;
+    color: #333 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    direction: "ltr" !important;
+    font-size: 12px !important;
+  }
+  
+  /* Leaflet */
+  
+  .leaflet-top, .leaflet-bottom {
+    z-index: 900 !important;
+  }
+  
+  /* Bootstrap dialog */
+  
+  ai-dialog-body {
+    /* max-height: 500px; */
+    /* max-width: 600px; */
+    overflow: hidden;
+  }
+  
+  /* Nav bar */
+  
+  .navbar {
+    margin-bottom: 0px !important;
+  }
+  
+  /* Jumbotron */
+  
+  .jumbotron {
+    padding: 50px !important;
+    margin-top: 25px !important;
+  }
+  
+    .jumbotron .btn {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  
+  /* Kendo UI */
+  
+  .k-state-selected, .k-state-selected:link, .k-state-selected:visited, .k-list > .k-state-selected, .k-list > .k-state-highlight, .k-panel > .k-state-selected, .k-ghost-splitbar-vertical, .k-ghost-splitbar-horizontal, .k-draghandle.k-state-selected:hover, .k-scheduler .k-scheduler-toolbar .k-state-selected, .k-scheduler .k-today.k-state-selected, .k-marquee-color {
+    background-color: #12B0BD !important;
+    border-color: #12B0BD !important;
+  }
+  
+  .k-primary, .k-overflow-container .k-primary {
+    background-color: #12B0BD !important;
+    border-color: #12B0BD !important;
+  }
+  
+  .k-widget.k-treeview {
+    color: #333 !important;
+  }
+  
+  .k-chart-tooltip {
+    text-align: left !important;
+  }
+  
+  /* Spinner */
+  
+  .fa-spinner {
+    font-size: 36px;
+    color: #666;
+  }
+  
+  /* General */
+  
+  .horizontal-vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #filterDescription {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+  
+  /* Error dialog */
+  
+  .error-icon {
+    font-size: 30px;
+    color: red;
+  }
+  
+  /* Reports */
+  
+  /*
+  .k-chart {
+    height: 400px;
+  }
+  */
+  
+  /* Workspace select */
+  
+  #workspaceSelectDiv ai-dialog-body {
+    /* min-width: 380px; */
+    position: relative;
+    /* required for Kendo progress indicator to be centered */
+  }
+  
+  #workspaceSelectDiv select {
+    width: 100%;
+  }
+  
+  #workspaceSelectDiv .k-grid-content {
+    /* Fixed height allows vertical scrollbar to appear (Windows phone) */
+    height: 270px;
+    overflow-y: scroll !important;
+  }
+  
+  /* Workspace create */
+  
+  #workspaceCreateDiv ai-dialog-body {
+    /* min-width: 380px; */
+    position: relative;
+    /* required for Kendo progress indicator to be centered */
+  }
+  
+  #workspaceCreateDiv select {
+    width: 100%;
+  }
+  
+  /* Popovers */
+  
+  .popover {
+    min-width: 100px;
+    max-width: 100%;
+    z-index: 9999;
+  }
+  
+  
+  /* Claims  */
+  #collapseClaim li[data-status='Active'] a {
+    background-color: #41b309;
+  }
+  
+  #collapseClaim li[data-status='Maintenance'] a {
+    background-color: #ffb830;
+  }
+  
+  #collapseClaim li[data-status='Finalised'] a {
+    background-color: #cecece;
+  }
+  
+  #collapseClaim li[data-status='Reopened'] a {
+    background-color: #7ac5f7;
+  }
+  
+  /* Overloading bootstrap CSS */
+  .nav-tabs > li.active > a {
+    border: 2px solid black !important;
+  }
+  
+  .nav-tabs > li.active > a {
+    font-weight: bolder !important;
+  }
+  
+  .nav-tabs > li:not(.active) > a:hover {
+    opacity: 0.8 !important;
+  }
+  
+  .nav-tabs {
+    border-bottom: 2px solid black !important;
+  }
+  
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

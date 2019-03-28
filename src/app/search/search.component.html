@@ -1,0 +1,71 @@
+
+<div class="container">
+   <div class="row">
+      <table width="100%">
+          <tr>
+            <td class="section-heading" width="10%">
+                <label for="claimNo">Claim No</label>            
+            </td>
+            <td  class="section-heading"  width="35%">
+              <mat-form-field >
+                <input matInput type="search" id="claimNo" [(ngModel)]="searchClaimNo" placeholder="Enter claim number ">
+              </mat-form-field>
+              </td>
+              
+
+               <td  class="section-heading"  width="5%">
+                <!-- <a class="numberCircle" click.delegate="clearClaimText()">X</a> -->
+              </td>
+              <td class="section-heading" width="10%">
+                  <label for="DOB">Date of Birth</label>            
+              </td>
+              <td class="section-heading"  width="35%">
+                <mat-form-field>
+                  <input matInput type="search" id=DOB [(ngModel)]="searchDOB" placeholder="Enter person date of birth">
+                </mat-form-field>
+                </td>
+                 <td  class="section-heading"  width="5%">
+                  <!-- <a class="numberCircle"  click.delegate="clearDOBText()">X</a> -->
+                </td>
+               </tr>
+            <tr>
+
+                       <td class="section-heading" width="10%">
+                      <label for="FName">First Name</label>            
+                  </td>
+                  <td class="section-heading"  width="35%">
+                    <mat-form-field>
+                      <input matInput type="search" Id="FName" [(ngModel)]="searchFirstname" placeholder="Enter person first Name.">
+                    </mat-form-field>
+                    </td>
+                     <td  class="section-heading" width="5%">
+                      <!-- <a class="numberCircle" click.delegate="clearFirstnameText()">X</a> -->
+                    </td>
+                    <td class="section-heading" width="10%">
+                        <label for="LName">Last Name</label>            
+                      </td>
+                    <td class="section-heading"  width="35%">
+                      <mat-form-field>
+                        <input matInput type="search" id ="LName"[(ngModel)]="searchSurname" placeholder="Enter person Last Name ">
+                      </mat-form-field>
+                      </td>
+                       <td  class="section-heading" width="5%">
+                        <!-- <a class="numberCircle" click.delegate="clearSurnameText()">X</a> -->
+                      </td>
+                      </tr>
+                <tr>
+                  <td colspan="3" align="center">
+                      <button mat-raised-button  class="btn-primary"  (click)="getPersons()" >Search</button>
+                      
+                  </td>
+                  <td colspan="3" align="center">
+                      <button mat-raised-button  class="btn-primary"  (click)="clearSearchCriteria()" >Clear All</button>
+                    
+                </td>
+              </tr>
+              </table>
+             
+   </div>
+   <table ref="resultsTable"></table>
+   <app-search-table></app-search-table>
+</div>

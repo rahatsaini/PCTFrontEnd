@@ -1,0 +1,9 @@
+a:hover,
+a:active{
+    color: black;
+}
+.navigationToolbar{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

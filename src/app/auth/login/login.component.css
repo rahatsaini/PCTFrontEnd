@@ -1,0 +1,21 @@
+mat-card {
+  
+  width: 900px;
+  border-radius:5Px;
+  border-color: gray;
+  height: auto;
+  margin:auto;
+  
+  
+}
+
+mat-card-title{
+  background: lightgray;
+overflow: hidden;
+border-radius: 5px;
+text-align: center;
+}
+button{
+  display: block;
+  width: 200px;
+}

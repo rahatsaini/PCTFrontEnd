@@ -1,0 +1,19 @@
+<!-- <p> this is test</p> -->
+
+<!-- <div *ngFor="let person of _Persons  | async">this is {{person}} </div> -->
+<mat-table [dataSource]="dataSource" myTable #myTable class="mat-elevation-z8">
+    <ng-container matColumnDef="claim">
+        <mat-header-cell *matHeaderCellDef>Claim</mat-header-cell>
+        <mat-cell *matCellDef="let element">{{element.claim}}<a fxFlexFill class="mat-row-link"></a></mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="firstName">
+        <mat-header-cell *matHeaderCellDef>Name</mat-header-cell>
+        <mat-cell *matCellDef="let element">{{element.firstName}} {{element.lastName}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="dateOfBirth">
+        <mat-header-cell *matHeaderCellDef>Date Of Birth</mat-header-cell>
+        <mat-cell *matCellDef="let element">{{element.dateOfBirth}}</mat-cell>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row routerLink="" *matRowDef="let row; columns: displayedColumns;"></mat-row>
+</mat-table>
